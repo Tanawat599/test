@@ -1,0 +1,368 @@
+body {
+  
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+
+
+header h1 {
+  
+  position: absolute;
+  top: 65px; /* Adjust vertical position */
+  left: 260px; 
+  margin: 40px 0;
+  color: #333;
+}
+
+header p {
+  position: absolute;
+  top: 130px; /* Adjust vertical position */
+  left: 260px; 
+  color: #555;
+  font-size: 18px;
+}
+
+section {
+  max-width: 70%;
+
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 18%;
+  margin-right: 18%;
+  border-radius: 8px;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills li {
+  background-color: #e0f7ff;
+  padding: 8px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.skills-category {
+  width: 45%; /* ปรับขนาดให้แต่ละฝั่งมีขนาดใกล้เคียงกัน */
+}
+
+.skills-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap; /* ให้จัดวางเป็นแถวถัดไปถ้าพื้นที่ไม่พอ */
+  justify-content: space-between; /* กระจายพื้นที่ระหว่างคอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างแต่ละคอลัมน์ */
+  align-items: flex-start; /* จัดตำแหน่งด้านบนให้ตรงกัน */
+}
+
+.experience-category {
+  
+  flex: 1 1 calc(33.333333% - 20px); /* คอลัมน์ใช้พื้นที่ 50% */
+  box-sizing: border-box; /* ปรับขนาดให้รองรับ padding */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  padding: 15px; /* ระยะห่างภายใน */
+  margin-bottom: 20px; /* ระยะห่างระหว่างแถว */
+  border-radius: 4px; /* มุมโค้ง */
+}
+
+
+
+footer {
+  background-color: #ddefff;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*list-style-type: none;*/
+  background-color: #333;
+  padding: 1rem;
+  z-index: 1000;
+  margin: 0;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar li {
+  margin: 0 1rem;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: #f0a500;
+}
+.profile-pic {
+    position: absolute;
+    top: 90px; /* Adjust vertical position */
+    left: 40px; /* Adjust horizontal position */
+    width: 240px;
+    height: auto;
+  
+}
+
+
+header {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: flex-start; /* Aligns items to the left */
+  background-color: #e0f0ff;
+  padding: 140px;
+}
+
+
+.read-more{
+    display: block;
+    text-align: center;
+    width: 5%;
+    margin: auto; /* ระยะห่างจากเนื้อหา */
+    padding: 10px 15px; /* ช่องว่างภายในปุ่ม */
+    background-color: #0066cc; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    border-radius: 4px; /* ทำมุมให้กลม */
+    transition: background-color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+.read-more:hover {
+  background-color: #004d99; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+}
+#additional-info {
+  background-color: #f9f9f9; /* สีพื้นหลัง */
+  padding: 15px; /* ช่องว่างภายใน */
+  border-radius: 5px; /* ทำมุมให้กลม */
+}
+#toggle-button {
+  display: block; /* ทำให้ปุ่มอยู่ในบล็อก */
+  margin: 20px auto; /* จัดกึ่งกลาง */
+  padding: 10px 20px; /* เพิ่มพื้นที่รอบปุ่ม */
+  background-color: #007BFF; /* สีพื้นหลังของปุ่ม */
+  color: white; /* สีข้อความของปุ่ม */
+  border: none; /* ไม่มีกรอบ */
+  border-radius: 5px; /* มุมโค้ง */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+}
+
+#toggle-button:hover {
+  background-color: #0056b3; /* เปลี่ยนสีเมื่อชี้ที่ปุ่ม */
+}
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004999;
+}
+
+.button-container1{
+
+  text-align: center; /* ทำให้ปุ่มอยู่กึ่งกลาง */
+
+}
+
+.button-container {
+  text-align: center; /* ทำให้ปุ่มอยู่กึ่งกลาง */
+  margin-top: 20px;
+}
+
+.read-more7{
+  text-align: center;
+}
+
+
+.Extension{
+  background-color: #f2efef;
+  position: relative;
+  bottom: 3%;
+}
+
+.Extension2{
+  background-color: #f2efef;
+  position: relative;
+  bottom: 3%;
+}
+
+article {
+  background-color: #f2efef; /* สีพื้นหลัง */
+  padding: 15px; /* ระยะห่างภายใน */
+  margin-bottom: 20px; /* ระยะห่างระหว่างแต่ละ article */
+  border-radius: 4px; /* มุมโค้ง */
+}
+
+h3 {
+  margin: 0; /* ลบระยะห่างบนล่างของ h3 */
+  font-size: 1.5em; /* ขนาดฟอนต์ที่ใหญ่ขึ้น */
+}
+
+p {
+  margin: 10px 0; /* ระยะห่างบนล่างระหว่างย่อหน้า */
+  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+/* CSS */
+.info-row {
+  display: flex;
+  align-items: center;
+}
+
+.level-info {
+  min-width: 150px; /* กำหนดความกว้างตามที่ต้องการ */
+}
+
+.moreinfo-category p {
+  min-width: 70px; /* กำหนดให้ตรงกับ .level-info */
+}
+
+
+.info-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.Gas-pic{
+  margin-top: 5%;
+  margin-bottom: 8%;
+  max-width: 60%;
+  height: auto;
+}
+.Roblox-pic{
+  max-width: 78%;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  height: auto;
+  border-radius: 4px;
+
+}
+.Bottle-img{
+  max-width: 67%;
+  margin-bottom: 15px;
+
+}
+.Sort-img{
+  max-width: 75%;
+
+}
+
+.Duo-img{
+  margin-top: 2%;
+  max-width: 70%;
+}
+
+.Tuf-img{
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  max-width: 90%;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+.grid {
+  transition: opacity 1s ease 0s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: left;
+  align-items: stretch;
+  column-gap: 18px;
+  row-gap: 5px;
+}
+/*
+.Primary{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: left;
+  align-items: stretch;
+  column-gap: 18px;
+  row-gap: 21px;
+}
+*/
+.content {
+  opacity: 0.75;
+  transition: opacity 1s ease 0s;
+  border-radius: 6px;
+  color: #242424;
+  background-color: #f2efef;
+  /*background-color: #ad1616;*/
+  font-weight: 600;
+  text-align: left; /* เปลี่ยนจาก center เป็น left */
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+.contentEMP {
+  border-radius: 6px;
+  color: #242424;
+  background-color: #ffffff;
+  font-weight: 600;
+  text-align: left; /* เปลี่ยนจาก center เป็น left */
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
+
+.Text{
+  text-align: left
+}
